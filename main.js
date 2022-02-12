@@ -140,6 +140,7 @@ $(document).ready(function () {
   architectureTl2.from('.architecture__image-2', { opacity: 0, duration: 1 });
   architectureTl2.from('.architecture__text-2', {
     y: 200,
+    opacity: 0,
     duration: 1,
   });
 
