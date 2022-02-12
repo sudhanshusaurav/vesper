@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>vesper</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@100;300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- ----------------Header Navbar-------------------- -->
+    <header class="container-fluid position-fixed top-0 start-0 header">
+      <div class="d-flex align-top justify-content-between">
+        <div class="logo d-flex flex-column">
+          <a href="" class="text-decoration-none fw-light logo__text">VESPER</a>
+          <a href="" class="text-decoration-none mt-1">+7 495 981 09 00</a>
+        </div>
+        <div class="menu">
+          <span class="hamburger d-inline-block me-2"
+            ><span></span> <span></span
+          ></span>
+          <span class="menu__label">MENU</span>
+
+          <nav class="nav">
+            <ul class="nav__links">
+              <li><a href="" class="nav__link">ABOUT</a></li>
+              <li><a href="" class="nav__link">APARTMENTS</a></li>
+              <li><a href="" class="nav__link">HOTEL</a></li>
+              <li><a href="" class="nav__link">SERVICES</a></li>
+              <li><a href="" class="nav__link">GALLERY</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <!-- ------------------------------------------------ -->
+
+    <!--------- Hero Section ------------------------>
+    <main class="hero">
+      <div class="image-wrapper position-relative">
+        <img src="./assets/hero-xl.jpg" alt="hero" class="w-100" />
+        <img
+          src="./assets/hero-overlay.png"
+          alt="hero-overlay"
+          class="position-absolute top-0 start-0 w-100 w-25"
+        />
+      </div>
+      <span class="hero__line"></span>
+    </main>
+    <!-- ------------------------------------------------- -->
+
+    <!-- -----------Info Section----------------------- -->
+    <section class="d-flex align-items-end info py-4">
+      <div class="container">
+        <div class="d-flex justify-content-end">
+          <div class="col-md-6 px-4 my-4 info__vesper">
+            <img src="./assets/svg/vesper-label.svg" alt="" class="px-4 w-50" />
+          </div>
+        </div>
+        <div class="d-flex">
+          <div class="col-md-6 text-end px-4 info__label">Address</div>
+          <div class="col-md-6 px-4 info__value">
+            <span class="slr"> 2 1st Tverskaya-Yamskaya st. </span>
+          </div>
+        </div>
+        <div class="d-flex">
+          <div class="col-md-6 text-end px-4 info__label">Available from</div>
+          <div class="col-md-6 px-4 info__value">
+            <span class="slr"> 2021 </span>
+          </div>
+        </div>
+        <div class="d-flex">
+          <div class="col-md-6 text-end px-4 info__label">
+                  Number of apartments
+          </div>
+          <div class="col-md-6 px-4 info__value">
+              <span class="slr">
+                  43
+              </span>  
+        </div>
+        </div>
+        <div class="d-flex">
+          <div class="col-md-6 text-end px-4 info__label">
+                  Floor area of apartments
+          </div>
+          <div class="col-md-6 px-4 info__value">
+            <span class="slr">
+                84-284 sq.m.
+            </span>
+            </div>
+        </div>
+        <div class="d-flex">
+          <div class="col-md-6 text-end px-4 info__label">
+            Floor area of penthouses
+          </div>
+          <div class="col-md-6 px-4 info__value">
+            <span class="slr">
+                1051 sq.m.
+            </span>  
+        </div>
+        </div>
+        <div class="d-flex">
+          <div class="col-md-6 text-end px-4 info__label">Project site</div>
+          <div class="col-md-6 px-4 info__value">
+            <span class="slr">
+                f-vr.ru
+            </span>  
+        </div>
+        </div>
+        <div class="d-flex justify-content-end">
+          <div class="col-md-6 px-4">
+            <a href="" class="info__link">
+                <span class="slr">
+                    VIDEO ABOUT THE PROJECT</a>
+                </span>
+          </div>
+        </div>
+        <div class="d-flex justify-content-end">
+          <div class="col-md-6 px-4">
+            <a href="" class="info__link">
+                <span class="slr">
+                    SUBMIT AN APPLICATION
+                </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ------------------------------------------------- -->
+
+    <!-- ---------------About Section---------------------- -->
+    <section class="about my-5 py-5">
+      <div class="container">
+        <p class="letter-spacing-2 about__subTitle">
+          VESPER AND THE LEGENDARY WORLDWIDE FAIRMONT HOTEL CHAIN PRESENT A NEW
+          PROJECT UNITING A FIVE-STAR HOTEL AND DELUXE APARTMENTS. THIS
+          EXCLUSIVE PROJECT IN THE MAIN STREET OF MOSCOW IS A GAME-CHANGER FOR
+          LIFE AESTHETICS IN A MODERN MEGAPOLIS.
+        </p>
+      </div>
+
+      <div class="container me-0 pe-0">
+        <div class="d-flex about__content mt-5 pt-4">
+          <div class="col-md-6 px-5">
+            <h1 class="heading-l about__heading heading__underline">ABOUT</h1>
+            <p class="px-5 mt-4 about__text">
+              Two buildings, one a hotel and the other comprising private
+              apartments, create a single ensemble. They are connected by shared
+              floors where there are restaurant and bar, a wellness and spa area
+              with a pool, a shopping gallery, conference halls and a parking
+              lot. In addition, each of the buildings has a separate entrance.
+              All the apartments are managed by the Fairmont organisation, and
+              private owners will have access to the entire hotel infrastructure
+              and impeccable round-the-clock service.
+            </p>
+          </div>
+          <div class="col-md-6 overflow-hidden">
+            <img src="./assets/about.jpg" alt="about" class="about__image" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- -------------------------------------------------- -->
+
+    <!-- -------------Location Section--------------------- -->
+    <section class="location my-5">
+      <div class="container-fluid text-center ps-0">
+        <h1 class="heading-l location__heading heading__underline">LOCATION</h1>
+        <!-- <div class="container"> -->
+        <div class="d-flex mt-5 location__content">
+          <div class="col-md-7">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d7135.322594156704!2d85.40509!3d26.595242!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1644564555751!5m2!1sen!2sin"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              id="location__map"
+            ></iframe>
+          </div>
+          <div class="col-md-3 text-start ms-5 px-3">
+            <p>
+              The Fairmont | Vesper Project completes the architectural ensemble
+              of Tverskaya Street, occupying the last free area of the city’s
+              main street - in the very heart of the cultural, business,
+              political, fine-dining and night life area of Moscow. Residence in
+              the very city centre creates a special pace of life. Everything
+              that one of the largest megapolises in the world can captivate you
+              with is within easy walking distance: philharmonic halls,
+              theatres, the main museums, top class restaurants, boutiques and
+              the Patriarch Ponds - one of the most fashionable and
+              conceptualised areas of the city.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- </div> -->
+    </section>
+    <!-- ---------------------------------------------------- -->
+
+    <!-- ------------Architecture Section--------------------- -->
+    <section class="container-fluid ps-0 pe-0 text-center py-5 my-5 architecture">
+      <h1
+        class="heading-l architecture__heading heading__underline d-inline-block px-5 me-1"
+      >
+        ARCHITECTURE
+      </h1>
+      <div
+        class="d-flex align-items-center justify-content-end container mt-4 me-0 pe-0 architecture-1"
+      >
+        <div class="col-md-3 text-start me-4">
+          <p class="architecture__text architecture__text-1">
+            The architectural concept of the project, created by the SPEECH
+            architectural bureau under the leadership of Sergey Choban, fits in
+            organically with the elegant range of historic buildings.
+          </p>
+        </div>
+        <div class="col-md-7 overflow-hidden">
+          <img
+            src="./assets/architecture.jpg"
+            alt="architecture"
+            class="architecture__image architecture__image-1"
+          />
+        </div>
+      </div>
+      <div
+        class="d-flex align-items-center justify-content-start container ms-0 ps-0 mt-5 pt-5 architecture-2"
+      >
+        <div class="col-md-7">
+          <img
+            src="./assets/architecture2.jpg"
+            alt="architecture"
+            class="architecture__image architecture__image-2"
+          />
+        </div>
+        <div
+          class="col-md-6 text-start d-flex align-items-center justify-content-center"
+        >
+          <div class="w-50 architecture__text__wrapper heading__underline">
+            <p class="architecture__text architecture__text-2 p-0">
+              The combination of bold lines with smooth contours and precise
+              proportions echoes the monumental character and scale of Tverskaya
+              Street.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ------------------------------------------------------ -->
+
+    <!-- -------------------------------------------- -->
+    <section class="my-5 py-4 overflow-hidden">
+      <img src="./assets/banner.jpg" alt="banner" class="w-100 architecture__banner" />
+    </section>
+    <!-- --------------------------------------------- -->
+
+    <!-- -------------Interior Section---------------------- -->
+    <section class="interiors my-5 py-4">
+      <div class="text-center">
+        <h1
+          class="heading-l heading__underline--vertical d-inline-block interiors__heading px-5"
+        >
+          INTERIORS
+        </h1>
+      </div>
+      <div class="container my-4">
+        <div class="d-flex justify-content-end gap-5">
+          <div class="col-md-2">
+            <div class="image__wrapper">
+              <img src="./assets/david.jpg" alt="david" class="w-100" />
+            </div>
+            <h5 class="">DAVID ROCKWELL</h5>
+            <p>Founder and president, Rockwell Group</p>
+          </div>
+          <div class="col-md-7 pe-5">
+            <p class="interiors__subtitle">
+              «For Fairmont | Vesper Hotel & Residences, we were inspired by the
+              grandiosity of Moscow’s iconic spaces. From the hotel lobby
+              lounge, to the restaurant, to residences, guests will encounter
+              endless discovery, but also begin to pick up on the repetition of
+              warmth, vibrancy, and artistry.»
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid ps-0 pt-4 mt-5">
+        <div class="d-flex align-items-end justify-content-start gap-5 interior">
+          <div class="col-md-7">
+            <div>
+              <img
+                src="./assets/interior.jpg"
+                alt="interior"
+                class="interiors__image"
+              />
+            </div>
+          </div>
+          <div class="col-md-3 pe-4 ms-4 interiors__text heading__underline">
+            <p class="m-0 interior__text">
+              The spacious lobby is decorated in noble, warm colours. The
+              combination of dark and light marble flooring follows the geometry
+              of the frosted glass and gold metal elements, separating the lobby
+              and lounge area. The strict forms and the powerful rhythm of
+              vertical lines in the decor are balanced with furniture that
+              emphasizes its own soft, rounded silhouettes.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ----------------------------------------------------- -->
+
+    <!-- -------------Apartments Section----------------------- -->
+    <section class="apartments my-5 py-4">
+      <div class="text-center">
+        <h1 class="heading-l">APARTMENTS</h1>
+      </div>
+      <div class="d-flex align-items-end gap-5 apartment">
+        <div class="col-md-2">
+          <img
+            src="./assets/tile-texture.jpg"
+            alt="tile"
+            class="apartment__image__tile"
+          />
+        </div>
+        <div class="col-md-2">
+          <p class="m-0 apartment__text">
+            A special palette of colours, shapes and materials has been
+            developed for the interior concept. The play of textures, the
+            delicate balance of light accents and the geometry of lines in the
+            decor and furniture hark back to the American avant-garde and
+            eclecticism, reminiscent of the reserved luxury of the interiors of
+            New York skyscrapers.
+          </p>
+        </div>
+        <div class="col-md-8 overflow-hidden">
+          <img
+            src="./assets/apartment-1.jpg"
+            alt="apartment"
+            class="apartment__image__main"
+          />
+        </div>
+      </div>
+      <div class="d-flex justify-content-end mt-5 pt-4">
+        <div class="col-md-7 apartment__subheading heading__underline">
+          <p class="w-50">
+            All the apartments have a superb quality of finish and include
+            fully-equipped kitchens and bathrooms. The interiors are easily
+            adapted to any interior-design solutions.
+          </p>
+        </div>
+      </div>
+      <div class="container position-relative apartment-slide__wrapper">
+        <div class="apartment-slide align-items-center justify-content-center">
+          <div class="col-md-2">
+            <img src="./assets/slide-1-1.jpg" alt="slide-1" class="w-100" />
+          </div>
+          <div class="col-md-4">
+            <img src="./assets/slide-1-2.jpg" alt="slide-2" class="w-100" />
+          </div>
+          <div class="col-md-2">
+            <img src="./assets/slide-1-3.jpg" alt="slide-3" class="w-100" />
+          </div>
+        </div>
+        <div class="arrow apartment-arrow-right">
+          <img src="./assets/svg/arrow-right.svg" alt="arrow-right" />
+        </div>
+        <div class="arrow apartment-arrow-left">
+          <img src="./assets/svg/arrow-left.svg" alt="arrow-left" />
+        </div>
+      </div>
+    </section>
+
+    <!-- ------------------------------------------------------ -->
+
+    <!-- -----------Penthouse Section------------------------ -->
+    <section class="penthouse">
+      <div class="text-center">
+        <h1 class="heading-l penthouse__heading heading__underline">
+          PENTHOUSES
+        </h1>
+      </div>
+      <div class="container">
+        <div class="d-flex justify-content-end">
+          <div class="col-md-5 ps-5">
+            <p class="w-75 pe-5 my-3 penthouse__text">
+              Special attention must be reserved for the penthouse, which
+              occupies the whole top floor and has its own patio, separate
+              entrance and lift.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="mt-5 overflow-hidden">
+        <img
+          src="./assets/penthouse.jpg"
+          alt="penthouse"
+          class="penthouse__image"
+        />
+      </div>
+    </section>
+    <!-- ------------------------------------------------------ -->
+
+    <!-- --------------Infrastructure Section------------------ -->
+    <section class="infrastructure my-5 py-4">
+      <div class="text-center">
+        <h1 class="heading-l infrastructure__heading">INFRASTRUCTURE</h1>
+      </div>
+      <div class="container my-4">
+        <div class="d-flex align-items-end justify-content-around">
+          <div class="col-md-6 position-relative infra-slide__wrapper">
+            <div class="infra-slide d-flex">
+              <div class="">
+                <img src="./assets/infra-1.jpg" alt="infra-1" class="w-100" />
+              </div>
+              <div>
+                <img src="./assets/infra-2.jpg" alt="infra-2" class="w-100" />
+              </div>
+              <div>
+                <img src="./assets/infra-3.jpg" alt="infra-3" class="w-100" />
+              </div>
+              <div>
+                <img src="./assets/infra-4.jpg" alt="infra-4" class="w-100" />
+              </div>
+              <div>
+                <img src="./assets/infra-5.jpg" alt="infra-5" class="w-100" />
+              </div>
+            </div>
+            <div class="arrow infra-arrow-right">
+              <img src="./assets/svg/arrow-right.svg" alt="arrow-right" />
+            </div>
+            <div class="arrow infra-arrow-left">
+              <img src="./assets/svg/arrow-left.svg" alt="arrow-left" />
+            </div>
+          </div>
+          <div class="col-md-3">
+            <p class="m-0 infrastructure__">
+              A fine-dining restaurant, a wellness-club with a pool and spa,
+              modern conference halls and spacious lounge zones are available at
+              the Fairmont Hotel for both guests and apartment owners.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="infra-features">
+        <div
+          class="container position-relative mt-5 infra-feature-slide__wrapper"
+        >
+          <div
+            class="d-flex gap-5 px-5 justify-content-between infra-feature-slide"
+          >
+            <div class="col-md-3 px-5">
+              <h5>RESTAURANT AND BARS</h5>
+              <p>
+                The fine-dining restaurant located in the hotel offers a wide
+                selection of original dishes that are perfectly complemented by
+                exclusive wines, carefully selected by...
+              </p>
+              <a href="">read more ></a>
+            </div>
+            <div class="col-md-3 px-5">
+              <h5>CONFERENCE HALLS</h5>
+              <p>
+                The Fairmont Hotel has a spacious conference room with an area
+                of 310 square metres, equipped with a soundproof audio
+                installation, microphones and other...
+              </p>
+              <a href="">read more ></a>
+            </div>
+            <div class="col-md-3 px-5">
+              <h5>SWIMMING POOL AND SPA</h5>
+              <p>
+                The hotel pool is filled with crystal clear water, while the
+                state-of-the-art Spa Centre offers a wide range of treatments to
+                help restore strength and energy. If desired, some of the spa
+                treatments can be arranged in your own apartment.
+              </p>
+              <a href="">read more ></a>
+            </div>
+            <div class="col-md-3 px-5">
+              <h5>FITNESS AND YOGA</h5>
+              <p>
+                The hotel fitness centre is at the disposal of the apartment
+                owners. The newest sports equipment provides maximum benefits
+                from workouts. Innovative treadmills offer stunning...
+              </p>
+              <a href="">read more ></a>
+            </div>
+          </div>
+          <div class="arrow arrow-right infra-feature-arrow-right">
+            <img src="./assets/svg/arrow-right.svg" alt="arrow-right" />
+          </div>
+          <div class="arrow arrow-left infra-feature-arrow-left">
+            <img src="./assets/svg/arrow-left.svg" alt="arrow-left" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ------------------------------------------------------- -->
+
+    <!-- --------------- Services Section----------------------- -->
+    <section class="services my-5">
+      <div class="d-flex justify-content-center">
+        <span class="services__header__content">
+          <h1 class="heading-l services__heading heading__underline">
+            SERVICES
+          </h1>
+          <h5 class="services__subtitle">
+            A PRIVILEGE THAT HAS BECOME A <br />
+            WORLD TREND IS NOW AVAILABLE IN <br />
+            MOSCOW.
+          </h5>
+        </span>
+      </div>
+      <div class="container position-relative py-3 service-slide__wrapper">
+        <div class="service-slide">
+          <div class="d-flex gap-5 justify-content-center align-items-center">
+            <div class="col-4">
+              <img src="./assets/service-1.jpg" alt="service" class="w-100" />
+            </div>
+            <div class="col-4">
+              <h5>CONCIERGE SERVICE 24/7</h5>
+              <p class="pe-5">
+                We value your time. The concierge is your perfect assistant, who
+                is not only ready at any time to reserve a table in any of the
+                best restaurants or bars in the city, or secure invitations to a
+                high-profile premiere or exhibition, but can also recommend a
+                nutritionist, a personal trainer, a wine consultant or call a
+                maid or nanny for your children.
+              </p>
+            </div>
+          </div>
+          <div class="d-flex gap-5 justify-content-center align-items-center">
+            <div class="col-4">
+              <img src="./assets/service-2.jpg" alt="service" class="w-100" />
+            </div>
+            <div class="col-4">
+              <h5>NANNY SERVICE</h5>
+              <p class="pe-5">
+                The flawless Fairmont service is available for all family
+                members, including even the youngest ones. Experienced and
+                professional nannies will look after your children and arrange
+                their time in the most rewarding and beneficial way, enabling
+                their parents not to be distracted from their important
+                business.
+              </p>
+            </div>
+          </div>
+          <div class="d-flex gap-5 justify-content-center align-items-center">
+            <div class="col-4">
+              <img src="./assets/service-3.jpg" alt="service" class="w-100" />
+            </div>
+            <div class="col-4">
+              <h5>MAID SERVICES</h5>
+              <p class="pe-5">
+                To maintain perfect cleanliness and excellent order in the
+                apartments, you can use the services of Fairmont maids. In
+                particular, you can order furniture and carpet cleaning or ask
+                them to prepare the apartments for your return from a business
+                trip or vacation.
+              </p>
+            </div>
+          </div>
+          <div class="d-flex gap-5 justify-content-center align-items-center">
+            <div class="col-4">
+              <img src="./assets/service-4.jpg" alt="service" class="w-100" />
+            </div>
+            <div class="col-4">
+              <h5>TAILORING SERVICES AND DRY CLEANING</h5>
+              <p class="pe-5">
+                To always look perfect, you do not need to spend a lot of time
+                taking care of your wardrobe. Use the hotel services, including
+                tailors, laundry, dry cleaning, ironing and shoe care. Your
+                items will be carefully kept in excellent condition and
+                delivered to your apartment by Fairmont staff.
+              </p>
+            </div>
+          </div>
+          <div class="d-flex gap-5 justify-content-center align-items-center">
+            <div class="col-4">
+              <img src="./assets/service-5.jpg" alt="service" class="w-100" />
+            </div>
+            <div class="col-4">
+              <h5>TECHNICAL SUPPORT AND APARTMENT SERVICES</h5>
+              <p class="pe-5">
+                Additional services include maintenance of the apartments by the
+                hotel technical staff. They will help you troubleshoot any issue
+                with your apartment, and during your absence, employees will
+                regularly check the operation of all of its systems.
+              </p>
+            </div>
+          </div>
+          <div class="d-flex gap-5 justify-content-center align-items-center">
+            <div class="col-4">
+              <img src="./assets/service-6.jpg" alt="service" class="w-100" />
+            </div>
+            <div class="col-4">
+              <h5>DOORMAN</h5>
+              <p class="pe-5">
+                The apartment owners can use the doorman service to welcome
+                guests at the building entrance.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="arrow arrow-right service-arrow-right">
+          <img src="./assets/svg/arrow-right.svg" alt="arrow-right" />
+        </div>
+        <div class="arrow arrow-left service-arrow-left">
+          <img src="./assets/svg/arrow-left.svg" alt="arrow-left" />
+        </div>
+      </div>
+
+      <div class="mt-5 overflow-hidden">
+        <img src="./assets/service-banner.jpg" alt="service" class="w-100 service__banner" />
+      </div>
+    </section>
+    <!-- -------------------------------------------------------- -->
+
+    <!-- ---------------- Project Section------------------------ -->
+    <section class="project">
+        <div class="d-flex justify-content-center">
+            <h1 class="heading-l heading__underline--vertical project__heading d-inline-block px-5">PROJECT <br> TEAM</h1>
+        </div>
+
+        <div class="container d-flex flex-wrap gap-5 justify-content-between project__content">
+            <div class="col-md-3 mt-5">
+                <div>
+                    <h5 class="fw-normal">SBERBANK INVESTMENTS LLC</h5>
+                    <p class="subheading-sm text-decoration-underline">FINANCIAL PARTNER OF THE PROJECT</p>
+                    <p>Sberbank Investments LLC is a 100% subsidiary of Sberbank. Key area of activity is providing corporate customers ...</p>
+                    <a href="" class="project__link">read more ></a>
+                </div>
+            </div>
+            <div class="col-md-3 mt-5">
+                 <div>
+                    <h5 class="fw-normal">SPEECH</h5>
+                    <p class="subheading-sm text-decoration-underline">PROJECT ARCHITECTS</p>
+                    <p>This architectural bureau, founded in 2006 by architects Sergey Choban and Sergey Kuznetsov, is a leading such ...</p>
+                    <a href="" class="project__link">read more ></a>
+                </div>
+            </div>
+            <div class="col-md-3 mt-5">
+                 <div>
+                    <h5 class="fw-normal">ROCKWELL GROUP</h5>
+                    <p class="subheading-sm text-decoration-underline">INTERIOR DESIGN PROJECTS</p>
+                    <p>The avant-garde New York Architectural Bureau creates conceptual design projects around the world. Founded in ...</p>
+                    <a href="" class="project__link">read more ></a>
+                </div>
+            </div>
+            <div class="col-md-3 mt-5">
+                 <div>
+                    <h5 class="fw-normal">CONSTRUCTOR GROUP</h5>
+                    <p class="subheading-sm text-decoration-underline">GENERAL CONTRACTOR</p>
+                    <p>Constructor Group is a company specialising in building high-quality residential projects in Moscow and the ...</p>
+                    <a href="" class="project__link">read more ></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- -------------------------------------------------------- -->
+
+    <!-- ----------------- Presentation Section--------------------- -->
+    <section class="persentation my-5 py-4">
+        <div class="container d-flex justify-content-end mb-5">
+            <div class="col-md-3">
+                <div class="presentation__link__wrapper">
+                    <a href="" class="presentation__link text-decoration-none">PRESENTATION <br> <span class="">DOWNLOAD PDF ></span></a>
+                </div>
+                <div class="presentation__link__wrapper">
+                    <a href="" class="presentation__link">PHOTOS</a>
+                </div>
+                <div class="presentation__link__wrapper">
+                    <a href="" class="presentation__link">VIDEO ABOUT THE PROJECT</a>
+                </div>
+                <div class="presentation__link__wrapper">
+                    <a href="" class="presentation__link">CONSTRUCTION PROGRESS</a>
+                </div>
+                <div class="presentation__link__wrapper">
+                    <a href="" class="presentation__link">DOCUMENTATION</a>
+                </div>
+                <div class="presentation__link__wrapper">
+                    <a href="" class="presentation__link">SUBMIT AN APPLICATION</a>
+                </div>
+            </div>
+        </div>
+        <div class="persentation__banner position-relative">
+            <img src="./assets/persentation-banner.jpg" alt="banner" class="w-100">
+            <div class="presentation__form ">
+                <form action="">
+                    <div class="mb-3">
+                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Name">
+                    </div>
+                    <div class="mb-3">
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Email">
+                    </div>
+                    <div class="mb-3">
+                        <input type="tel" class="form-control" id="exampleFormControlInput1" placeholder="Mobile No.">
+                    </div>
+                    <div class="mb-3">
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Your Message"></textarea>
+                    </div>
+                    <div class="col-auto">
+                        <button type="submit" class="btn btn-primary mb-3 w-100">Send Message</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- --------------------------------------------------------------- -->
+
+    <!-- ------------------Footer Section------------------------------- -->
+    <footer class="footer mt-5 pt-4 position-relative overflow-hidden">
+        <div class="container d-flex justify-content-center mb-5">
+            <div class="col-2 text-center">
+                <img src="./assets/svg/logo.svg" alt="logo" class="w-50">
+            </div>
+        </div>
+        <div class="container mt-5 footer__nav__wrapper">
+            <div class="footer__nav position-relative">
+                <ul class="nav__items__footer d-flex list-unstyled">
+                    <li class="nav__item__footer py-4"><a href="">ABOUT US</a></li>
+                    <li class="nav__item__footer py-4"><a href="">NEWS</a></li>
+                    <li class="nav__item__footer py-4"><a href="">PROJECTS</a></li>
+                    <li class="nav__item__footer py-4"><a href="">CONTACTS</a></li>
+                </ul>
+            </div>
+            <div class=" pb-5 mt-2">
+                <p>+7 (495) 981-09-00, 75 SADOVNICHESKAYA EMBANKMENT MOSCOW, F2</p>
+                <div class="d-flex align-items-center gap-4 my-4">
+                    <img src="./assets/svg/facebook.svg" alt="facebook" class="social__icon">
+                    <img src="./assets/svg/insta.svg" alt="insta" class="social__icon">
+                    <img src="./assets/svg/telegram.svg" alt="telegram.svg" class="social__icon">
+                    <img src="./assets/svg/youtube.svg" alt="youtube.svg" class="social__icon">
+                    <img src="./assets/svg/vimeo.svg" alt=vimeo.svgk" class="social__icon">
+                    <img src="./assets/svg/a.svg" alt="a.svg" class="social__icon">
+                </div>
+
+                <div>
+                    <span><a href="" class="text-black">RU</a> | <a href="" class="text-black">ENG</a></span>
+
+                    <p class="mt-4">© 2022 VESPER.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- ----------------------------------------------------------------- -->
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+    <script src="./main.js"></script>
+  </body>
+</html>
