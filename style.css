@@ -576,7 +576,7 @@ a {
   .heading-l {
     font-size: 3.5rem;
     font-weight: 300;
-    letter-spacing: 3px;
+    letter-spacing: 1px;
   }
 
   .hero__line {
@@ -606,5 +606,14 @@ a {
 
   .location__heading::after {
     left: -5rem;
+  }
+
+  .footer__nav__wrapper {
+    margin-right: 0;
+  }
+
+  .nav__items__footer {
+    gap: 2rem;
+    margin-left: 0;
   }
 }
