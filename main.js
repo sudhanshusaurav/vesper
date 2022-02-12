@@ -2,16 +2,13 @@ $(document).ready(function () {
   ///////////////// Apartment Slide ////////////////////////
   $('.apartment-slide').slick({
     slidesToShow: 3,
-    centerMode: true,
-    centerPadding: '60px',
+    // centerMode: true,
+    // centerPadding: '60px',
     infinite: true,
-    autoplay: true,
-    autoplaySpeed: 2000,
-    arrows: true,
+    arrows: false,
   });
 
   $('.apartment-arrow-right').click(function () {
-    console.log('hello');
     $('.apartment-slide').slick('slickNext');
   });
 

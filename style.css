@@ -77,6 +77,14 @@ a {
   letter-spacing: 2px;
 }
 
+.logo__text:hover {
+  color: white;
+}
+
+.header__contact:hover {
+  color: brown;
+}
+
 .nav__links {
   list-style: none;
   padding: 0;
@@ -269,6 +277,26 @@ a {
   z-index: 1;
 }
 
+.apartment-slide__wrapper::before {
+  content: '';
+  position: absolute;
+  top: calc(50% + 1rem);
+  left: -5rem;
+  width: 5rem;
+  height: 1px;
+  background: #000;
+}
+
+.apartment-slide__wrapper::after {
+  content: '';
+  position: absolute;
+  top: calc(50% + 1rem);
+  right: -5rem;
+  width: 5rem;
+  height: 1px;
+  background: #000;
+}
+
 .apartment-arrow-right {
   right: 2rem;
   z-index: 10 !important;
@@ -277,6 +305,23 @@ a {
 .apartment-arrow-left {
   left: 2rem;
   z-index: 10 !important;
+}
+
+.apartment-slide div {
+  transform: scale(0.6);
+}
+
+.apartment-slide .slick-active {
+  transform: scale(0.6);
+}
+
+.apartment-slide .slick-active + .slick-active {
+  transition: all 0.6s;
+  transform: scale(1);
+}
+
+.apartment-slide .slick-active + .slick-active + .slick-active {
+  transform: scale(0.6);
 }
 
 .penthouse__heading {
