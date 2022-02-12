@@ -274,4 +274,44 @@ $(document).ready(function () {
       start: 'top 80%',
     },
   });
+
+  gsap.from('.project__heading', {
+    x: 200,
+    opacity: 0,
+    duration: 1,
+    scrollTrigger: {
+      trigger: '.project',
+      start: 'top 80%',
+    },
+  });
+
+  gsap.from('.project__content', {
+    y: 200,
+    opacity: 0,
+    duration: 1,
+    scrollTrigger: {
+      trigger: '.project',
+      start: 'top 80%',
+    },
+  });
+
+  gsap.from('.presentation__links', {
+    x: 200,
+    opacity: 0,
+    duration: 1,
+    scrollTrigger: {
+      trigger: '.presentation',
+      start: 'top 80%',
+    },
+  });
+
+  gsap.from('.presentation__form', {
+    x: -200,
+    opacity: 0,
+    duration: 1,
+    scrollTrigger: {
+      trigger: '.presentation__banner',
+      start: 'top 80%',
+    },
+  });
 });
