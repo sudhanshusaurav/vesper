@@ -605,6 +605,6 @@ a {
   }
 
   .location__heading::after {
-    left: 0;
+    left: -5rem;
   }
 }
