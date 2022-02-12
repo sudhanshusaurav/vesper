@@ -1,4 +1,38 @@
 $(document).ready(function () {
+  $('.hamburger').click(function () {
+    $('.nav-sm').toggleClass('nav-sm--active');
+    $('.hamburger').toggleClass('hamburger--active');
+  });
+
+  // $('.country-code a').each(function () {
+  //   $(this).on('click', function (e) {
+  //     e.preventDefault();
+
+  //     let flagEmoji = $(this).querySelector('.flag-emoji').innerText;
+
+  //     console.log(flagEmoji);
+  //   });
+  // });
+
+  /////////// change Button label after selection //////////////////////
+  ////////////////////////////////////////////////////////////////////
+  const countryCodeBtn = document.querySelector('.country-code-btn');
+  const setcountryCodeBtnLabel = (emoji, dialCode) => {
+    countryCodeBtn.querySelector('.flag-emoji').innerText = emoji;
+    countryCodeBtn.querySelector('.dial-code').innerText = dialCode;
+  };
+
+  ////////// get country data on click and update fields //////////////
+  /////////////////////////////////////////////////////////////////////
+  document.querySelectorAll('.country-code a').forEach((option) => {
+    option.addEventListener('click', function (e) {
+      e.preventDefault();
+      let emoji = option.querySelector('.flag-emoji').innerText;
+      let dialCode = option.querySelector('.dial-code').innerText;
+      setcountryCodeBtnLabel(emoji, dialCode);
+    });
+  });
+
   ///////////////// Apartment Slide ////////////////////////
   $('.apartment-slide').slick({
     slidesToShow: 3,
