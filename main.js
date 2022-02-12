@@ -6,6 +6,14 @@ $(document).ready(function () {
     // centerPadding: '60px',
     infinite: true,
     arrows: false,
+    responsive: [
+      {
+        breakpoint: 767,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
   });
 
   $('.apartment-arrow-right').click(function () {
@@ -36,9 +44,25 @@ $(document).ready(function () {
   /////////// Infra feature Slide ///////////////////
   $('.infra-feature-slide').slick({
     slidesToShow: 3,
+    slidesToScroll: 1,
     speed: 500,
     infinite: true,
     arrows: false,
+    responsive: [
+      {
+        breakpoint: 991,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 767,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
   });
 
   $('.infra-feature-arrow-right').click(function () {

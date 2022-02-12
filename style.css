@@ -609,6 +609,19 @@ a {
   .penthouse__image {
     height: 60vw;
   }
+
+  .project__content {
+    padding: 0 5rem;
+    margin-left: 0;
+  }
+
+  .presentation__banner {
+    height: 70vw;
+  }
+
+  .presentation__form {
+    width: 70%;
+  }
 }
 
 @media (max-width: 767.98px) {
@@ -704,5 +717,46 @@ a {
 
   .apartment-slide div {
     transform: scale(1);
+  }
+
+  .apartment-slide div {
+    transform: scale(1);
+  }
+
+  .apartment-slide .slick-active {
+    transition: all 1s;
+    transform: scale(1);
+  }
+
+  .apartment-slide .slick-active + .slick-active {
+    transition: all 1s;
+    transform: scale(1);
+  }
+
+  .apartment-slide .slick-active + .slick-active + .slick-active {
+    transition: all 1s;
+    transform: scale(1);
+  }
+
+  .services__header__content {
+    margin-right: 0;
+  }
+
+  .project__heading {
+    margin-right: 0;
+  }
+
+  .project__heading::after {
+    display: none;
+  }
+
+  .presentation__banner {
+    height: 100vw;
+  }
+
+  .presentation__form {
+    left: 50%;
+    width: 80%;
+    transform: translate(-50%, -50%);
   }
 }
