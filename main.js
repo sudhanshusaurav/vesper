@@ -1,20 +1,27 @@
 $(document).ready(function () {
+  //////////// Open Navbar on mobile ///////////////////
   $('.hamburger').click(function () {
     $('.nav-sm').toggleClass('nav-sm--active');
     $('.hamburger').toggleClass('hamburger--active');
   });
 
-  // $('.country-code a').each(function () {
-  //   $(this).on('click', function (e) {
-  //     e.preventDefault();
+  //////////// close navbar on clicking link on mibile ///////////////////
+  $('.nav__links a').click(function () {
+    $('.nav-sm').toggleClass('nav-sm--active');
+    $('.hamburger').toggleClass('hamburger--active');
+  });
 
-  //     let flagEmoji = $(this).querySelector('.flag-emoji').innerText;
+  //////////// set sticky header on mobile and tablet ///////////////////////
+  const header = document.querySelector('.header');
+  window.onscroll = function () {
+    if (window.pageYOffset > 300) {
+      header.classList.add('sticky-header');
+    } else {
+      header.classList.remove('sticky-header');
+    }
+  };
 
-  //     console.log(flagEmoji);
-  //   });
-  // });
-
-  /////////// change Button label after selection //////////////////////
+  /////////// change country code Button label after selection //////////////////////
   ////////////////////////////////////////////////////////////////////
   const countryCodeBtn = document.querySelector('.country-code-btn');
   const setcountryCodeBtnLabel = (emoji, dialCode) => {
@@ -22,7 +29,7 @@ $(document).ready(function () {
     countryCodeBtn.querySelector('.dial-code').innerText = dialCode;
   };
 
-  ////////// get country data on click and update fields //////////////
+  ////////// get country data on click and update country button //////////////
   /////////////////////////////////////////////////////////////////////
   document.querySelectorAll('.country-code a').forEach((option) => {
     option.addEventListener('click', function (e) {
@@ -129,6 +136,7 @@ $(document).ready(function () {
 
   gsap.registerPlugin(ScrollTrigger);
 
+  ////////////// Header Animation //////////////////
   gsap.from('.header', { y: 200, duration: 1 });
 
   let tl = gsap.timeline({
@@ -138,14 +146,18 @@ $(document).ready(function () {
     },
   });
 
+  ////////////// Hero Section Scroll Animation ///////////////////
   tl.fromTo(
     '.hero__line',
     { clipPath: 'polygon(0 0, 100% 0, 100% 0, 0 0)' },
     { clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0% 100%)', duration: 0.5 }
   );
+
+  ////////////// Info Section Scroll Animation ///////////////////
   tl.from('.info__vesper', { y: 500, opacity: 0, duration: 0.5 });
   tl.from('.slr', { x: '-100%', opacity: 0 });
 
+  ////////////// About Section Scroll Animation ///////////////////
   gsap.from('.about__subTitle', {
     y: 200,
     duration: 1,
@@ -165,6 +177,7 @@ $(document).ready(function () {
   aboutTl.from('.about__image', { scale: 1.1, duration: 1 });
   aboutTl.from('.about__text', { y: 100, opacity: 0, duration: 1 });
 
+  ////////////// Location Section Scroll Animation ///////////////////
   gsap.from('.location__content', {
     y: 200,
     duration: 1,
@@ -174,6 +187,7 @@ $(document).ready(function () {
     },
   });
 
+  ////////////// Architecture Section Scroll Animation ///////////////////
   let architectureTl = gsap.timeline({
     scrollTrigger: {
       trigger: '.architecture-1',
@@ -211,6 +225,7 @@ $(document).ready(function () {
     },
   });
 
+  ////////////// Interiors Section Scroll Animation ///////////////////
   gsap.from('.interiors__image', {
     scale: 1.1,
     duration: 1,
@@ -223,6 +238,7 @@ $(document).ready(function () {
     scrollTrigger: { trigger: '.interior', start: 'top 80%' },
   });
 
+  ////////////// Apartments Section Scroll Animation ///////////////////
   gsap.from('.apartment__image__main', {
     scale: 1.1,
     duration: 1,
@@ -251,6 +267,7 @@ $(document).ready(function () {
     },
   });
 
+  ////////////// Penthouse Section Scroll Animation ///////////////////
   gsap.from('.penthouse__text', {
     y: 200,
     opacity: 0,
@@ -269,6 +286,7 @@ $(document).ready(function () {
     },
   });
 
+  ////////////// InfraStructure Section Scroll Animation ///////////////////
   gsap.from('.infrastructure__heading', { x: 500, opacity: 0, duration: 1 });
 
   gsap.from('.infrastructure__text', {
@@ -281,15 +299,7 @@ $(document).ready(function () {
     },
   });
 
-  //   gsap.from('.infra__slide', {
-  //     scale: 1.1,
-  //     duration: 1,
-  //     scrollTrigger: {
-  //       trigger: '.infra-slide',
-  //       start: 'top 80%',
-  //     },
-  //   });
-
+  ////////////// Service Section Scroll Animation ///////////////////
   gsap.from('.services__subtitle', {
     y: 200,
     opacity: 0,
@@ -309,6 +319,7 @@ $(document).ready(function () {
     },
   });
 
+  ////////////// Project Section Scroll Animation ///////////////////
   gsap.from('.project__heading', {
     x: 200,
     opacity: 0,
@@ -329,6 +340,7 @@ $(document).ready(function () {
     },
   });
 
+  ////////////// Persentation Section Scroll Animation ///////////////////
   gsap.from('.presentation__links', {
     x: 200,
     opacity: 0,
