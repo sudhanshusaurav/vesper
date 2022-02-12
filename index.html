@@ -28,7 +28,9 @@
       <div class="d-flex align-top justify-content-between">
         <div class="logo d-flex flex-column">
           <a href="" class="text-decoration-none fw-light logo__text">VESPER</a>
-          <a href="" class="text-decoration-none mt-1 header__contact">+7 495 981 09 00</a>
+          <a href="" class="text-decoration-none mt-1 header__contact"
+            >+7 495 981 09 00</a
+          >
         </div>
         <div class="menu">
           <span class="hamburger d-inline-block me-2"
@@ -53,11 +55,16 @@
     <!--------- Hero Section ------------------------>
     <main class="hero">
       <div class="image-wrapper position-relative">
-        <img src="./assets/hero-xl.jpg" alt="hero" class="w-100" />
+        <img
+          src="./assets/hero-xl.jpg"
+          alt="hero"
+          class="w-100 d-none d-md-block"
+        />
+        <img src="./assets/hero-md.jpg" alt="hero" class="w-100 d-md-none" />
         <img
           src="./assets/hero-overlay.png"
           alt="hero-overlay"
-          class="position-absolute top-0 start-0 w-100 w-25"
+          class="d-none d-md-block position-absolute top-0 start-0 w-100 w-25"
         />
       </div>
       <span class="hero__line"></span>
@@ -66,64 +73,64 @@
 
     <!-- -----------Info Section----------------------- -->
     <section class="d-flex align-items-end info py-4">
-      <div class="container">
-        <div class="d-flex justify-content-end">
+      <div class="container-md">
+        <div class="d-flex justify-content-md-end justify-content-center">
           <div class="col-md-6 px-4 my-4 info__vesper">
             <img src="./assets/svg/vesper-label.svg" alt="" class="px-4 w-50" />
           </div>
         </div>
         <div class="d-flex">
-          <div class="col-md-6 text-end px-4 info__label">Address</div>
-          <div class="col-md-6 px-4 info__value">
+          <div class="col-6 text-end px-4 info__label">Address</div>
+          <div class="col-6 px-4 info__value">
             <span class="slr"> 2 1st Tverskaya-Yamskaya st. </span>
           </div>
         </div>
         <div class="d-flex">
-          <div class="col-md-6 text-end px-4 info__label">Available from</div>
-          <div class="col-md-6 px-4 info__value">
+          <div class="col-6 text-end px-4 info__label">Available from</div>
+          <div class="col-6 px-4 info__value">
             <span class="slr"> 2021 </span>
           </div>
         </div>
         <div class="d-flex">
-          <div class="col-md-6 text-end px-4 info__label">
+          <div class="col-6 text-end px-4 info__label">
                   Number of apartments
           </div>
-          <div class="col-md-6 px-4 info__value">
+          <div class="col-6 px-4 info__value">
               <span class="slr">
                   43
               </span>  
         </div>
         </div>
         <div class="d-flex">
-          <div class="col-md-6 text-end px-4 info__label">
+          <div class="col-6 text-end px-4 info__label">
                   Floor area of apartments
           </div>
-          <div class="col-md-6 px-4 info__value">
+          <div class="col-6 px-4 info__value">
             <span class="slr">
                 84-284 sq.m.
             </span>
             </div>
         </div>
         <div class="d-flex">
-          <div class="col-md-6 text-end px-4 info__label">
+          <div class="col-6 text-end px-4 info__label">
             Floor area of penthouses
           </div>
-          <div class="col-md-6 px-4 info__value">
+          <div class="col-6 px-4 info__value">
             <span class="slr">
                 1051 sq.m.
             </span>  
         </div>
         </div>
         <div class="d-flex">
-          <div class="col-md-6 text-end px-4 info__label">Project site</div>
-          <div class="col-md-6 px-4 info__value">
+          <div class="col-6 text-end px-4 info__label">Project site</div>
+          <div class="col-6 px-4 info__value">
             <span class="slr">
                 f-vr.ru
             </span>  
         </div>
         </div>
         <div class="d-flex justify-content-end">
-          <div class="col-md-6 px-4">
+          <div class="col-6 px-4">
             <a href="" class="info__link">
                 <span class="slr">
                     VIDEO ABOUT THE PROJECT</a>
@@ -131,7 +138,7 @@
           </div>
         </div>
         <div class="d-flex justify-content-end">
-          <div class="col-md-6 px-4">
+          <div class="col-6 px-4">
             <a href="" class="info__link">
                 <span class="slr">
                     SUBMIT AN APPLICATION
@@ -146,7 +153,7 @@
     <!-- ---------------About Section---------------------- -->
     <section class="about my-5 py-5">
       <div class="container">
-        <p class="letter-spacing-2 about__subTitle">
+        <p class="about__subTitle">
           VESPER AND THE LEGENDARY WORLDWIDE FAIRMONT HOTEL CHAIN PRESENT A NEW
           PROJECT UNITING A FIVE-STAR HOTEL AND DELUXE APARTMENTS. THIS
           EXCLUSIVE PROJECT IN THE MAIN STREET OF MOSCOW IS A GAME-CHANGER FOR
@@ -155,10 +162,10 @@
       </div>
 
       <div class="container me-0 pe-0">
-        <div class="d-flex about__content mt-5 pt-4">
-          <div class="col-md-6 px-5">
+        <div class="d-flex flex-wrap about__content mt-5 pt-4">
+          <div class="col-12 col-md-6 px-5">
             <h1 class="heading-l about__heading heading__underline">ABOUT</h1>
-            <p class="px-5 mt-4 about__text">
+            <p class="px-md-5 mt-4 about__text">
               Two buildings, one a hotel and the other comprising private
               apartments, create a single ensemble. They are connected by shared
               floors where there are restaurant and bar, a wellness and spa area
@@ -169,7 +176,7 @@
               and impeccable round-the-clock service.
             </p>
           </div>
-          <div class="col-md-6 overflow-hidden">
+          <div class="col-12 col-md-6 mt-5 mt-md-0 overflow-hidden">
             <img src="./assets/about.jpg" alt="about" class="about__image" />
           </div>
         </div>
@@ -179,9 +186,8 @@
 
     <!-- -------------Location Section--------------------- -->
     <section class="location my-5">
-      <div class="container-fluid text-center ps-0">
+      <div class="container-fluid text-md-center ps-5 ps-md-0">
         <h1 class="heading-l location__heading heading__underline">LOCATION</h1>
-        <!-- <div class="container"> -->
         <div class="d-flex mt-5 location__content">
           <div class="col-md-7">
             <iframe
@@ -208,12 +214,11 @@
           </div>
         </div>
       </div>
-      <!-- </div> -->
     </section>
     <!-- ---------------------------------------------------- -->
 
     <!-- ------------Architecture Section--------------------- -->
-    <section class="container-fluid ps-0 pe-0 text-center py-5 my-5 architecture">
+    <!-- <section class="container-fluid ps-0 pe-0 text-center py-5 my-5 architecture">
       <h1
         class="heading-l architecture__heading heading__underline d-inline-block px-5 me-1"
       >
@@ -259,17 +264,17 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
     <!-- ------------------------------------------------------ -->
 
     <!-- -------------------------------------------- -->
-    <section class="my-5 py-4 overflow-hidden">
+    <!-- <section class="my-5 py-4 overflow-hidden">
       <img src="./assets/banner.jpg" alt="banner" class="w-100 architecture__banner" />
-    </section>
+    </section> -->
     <!-- --------------------------------------------- -->
 
     <!-- -------------Interior Section---------------------- -->
-    <section class="interiors my-5 py-4">
+    <!-- <section class="interiors my-5 py-4">
       <div class="text-center">
         <h1
           class="heading-l heading__underline--vertical d-inline-block interiors__heading px-5"
@@ -320,11 +325,11 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
     <!-- ----------------------------------------------------- -->
 
     <!-- -------------Apartments Section----------------------- -->
-    <section class="apartments my-5 py-4">
+    <!-- <section class="apartments my-5 py-4">
       <div class="text-center">
         <h1 class="heading-l">APARTMENTS</h1>
       </div>
@@ -385,12 +390,12 @@
           <img src="./assets/svg/arrow-left.svg" alt="arrow-left" />
         </div>
       </div>
-    </section>
+    </section> -->
 
     <!-- ------------------------------------------------------ -->
 
     <!-- -----------Penthouse Section------------------------ -->
-    <section class="penthouse">
+    <!-- <section class="penthouse">
       <div class="text-center">
         <h1 class="heading-l penthouse__heading heading__underline">
           PENTHOUSES
@@ -414,11 +419,11 @@
           class="penthouse__image"
         />
       </div>
-    </section>
+    </section> -->
     <!-- ------------------------------------------------------ -->
 
     <!-- --------------Infrastructure Section------------------ -->
-    <section class="infrastructure my-5 py-4">
+    <!-- <section class="infrastructure my-5 py-4">
       <div class="text-center">
         <h1 class="heading-l infrastructure__heading">INFRASTRUCTURE</h1>
       </div>
@@ -512,11 +517,11 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
     <!-- ------------------------------------------------------- -->
 
     <!-- --------------- Services Section----------------------- -->
-    <section class="services my-5">
+    <!-- <section class="services my-5">
       <div class="d-flex justify-content-center">
         <span class="services__header__content">
           <h1 class="heading-l services__heading heading__underline">
@@ -632,11 +637,11 @@
       <div class="mt-5 overflow-hidden">
         <img src="./assets/service-banner.jpg" alt="service" class="w-100 service__banner" />
       </div>
-    </section>
+    </section> -->
     <!-- -------------------------------------------------------- -->
 
     <!-- ---------------- Project Section------------------------ -->
-    <section class="project">
+    <!-- <section class="project">
         <div class="d-flex justify-content-center">
             <h1 class="heading-l heading__underline--vertical project__heading d-inline-block px-5">PROJECT <br> TEAM</h1>
         </div>
@@ -675,11 +680,11 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
     <!-- -------------------------------------------------------- -->
 
     <!-- ----------------- Presentation Section--------------------- -->
-    <section class="persentation my-5 py-4">
+    <!-- <section class="persentation my-5 py-4">
         <div class="container d-flex justify-content-end mb-5">
             <div class="col-md-3">
                 <div class="presentation__link__wrapper">
@@ -724,11 +729,11 @@
                 </form>
             </div>
         </div>
-    </section>
+    </section> -->
     <!-- --------------------------------------------------------------- -->
 
     <!-- ------------------Footer Section------------------------------- -->
-    <footer class="footer mt-5 pt-4 position-relative overflow-hidden">
+    <!-- <footer class="footer mt-5 pt-4 position-relative overflow-hidden">
         <div class="container d-flex justify-content-center mb-5">
             <div class="col-2 text-center">
                 <img src="./assets/svg/logo.svg" alt="logo" class="w-50">
@@ -761,7 +766,7 @@
                 </div>
             </div>
         </div>
-    </footer>
+    </footer> -->
     <!-- ----------------------------------------------------------------- -->
 
     <script
